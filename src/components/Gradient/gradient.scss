@@ -1,1 +1,21 @@
 @use 'src/styles/vars';
+
+#colors {
+  font-family: monospace;
+  display: flex;
+  justify-content: space-around;
+  color: vars.$grey-medium-darker;
+  padding: vars.$space-base * 2;
+  font-size: vars.$font-size-large;
+  text-shadow: 1px 1px 3px vars.$grey-gradient-text;
+}
+
+#gradient {
+  height: 300px;
+  background:violet;
+  border-radius: vars.$radius-large;
+  margin-block-end: vars.$space-base * 2;
+  color: vars.$grey-transparent;
+  font-size: vars.$font-size-base * 8;
+  line-height: 2;
+}

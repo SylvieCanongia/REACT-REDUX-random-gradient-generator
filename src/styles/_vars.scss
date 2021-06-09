@@ -3,7 +3,7 @@
 $font-size-base: 1em;
 
 $font-size-medium: 1.2rem;
-$font-size-large: 2rem;
+$font-size-large: 1.5rem;
 $font-size-very-large: 2.5rem;
 
 
@@ -23,8 +23,11 @@ $black: hsl(0deg, 0%, 0%);
 $blue: hsl(217, 71%, 53%);
 $grey-light: hsl(0, 0%, 86%);
 $grey-medium: hsl(0, 0%, 71%);
+$grey-gradient-text: hsl(0, 0%, 60%);
+$grey-medium-darker: hsl(0, 0%, 40%);
 $grey-medium-dark: hsl(0, 0%, 29%);
 $grey-dark: hsl(0, 0%, 21%);
+$grey-transparent: hsla(0, 0%, 100%, 0.5);
 
 // Border Radius
 $radius: 5px;
