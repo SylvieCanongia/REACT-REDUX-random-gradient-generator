@@ -1,0 +1,7 @@
+@use 'src/styles/vars';
+
+.app {
+  max-width: 500px;
+  margin: vars.$space-base * 2 auto;
+  text-align: center;
+}

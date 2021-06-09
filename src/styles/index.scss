@@ -1,6 +1,29 @@
 @use 'reset';
 @use 'vars';
 
-body {
-  font-family: sans-serif;
+/* Specific */
+* {
+  box-sizing: border-box;
 }
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html {
+  font-size: vars.$font-size-base;
+  font-family: 'Roboto', sans-serif;
+  line-height: vars.$line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: vars.$line-height-title;
+  font-size: vars.$font-size-medium;
+}
+
+
