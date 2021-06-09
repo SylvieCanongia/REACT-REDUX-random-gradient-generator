@@ -1,1 +1,12 @@
 @use 'src/styles/vars';
+
+.nbColors {
+  color: #fff;
+  background-color: vars.$blue;
+  padding: vars.$space-base (vars.$space-base * 2);
+  font-size: vars.$font-size-base * 0.9;
+  border-radius: 0 0 vars.$radius vars.$radius;
+  width: fit-content;
+  margin-inline: auto;
+  margin-block-end: vars.$space-base * 2;
+}
