@@ -4,7 +4,7 @@ import './gradient.scss';
 
 const Gradient = () => {
   const direction = '90deg';
-  const firstColor = 'blue';
+  const firstColor = 'orange';
   const lastColor = '#f0f';
   const gradient = `linear-gradient(${direction},${firstColor},${lastColor})`;
 
