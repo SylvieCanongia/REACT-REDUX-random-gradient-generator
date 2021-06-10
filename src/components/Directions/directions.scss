@@ -1,1 +1,68 @@
 @use 'src/styles/vars';
+
+.direction {
+
+  &.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .button {
+    border: 1px solid transparent;
+    border-color: vars.$grey-light;
+    font-family: vars.$font-family-base;
+    border-radius: vars.$radius;
+    font-size: vars.$font-size-base;
+    background-color: vars.$white;
+    color: vars.$grey-dark;
+    cursor: pointer;
+    padding: vars.$space-base * 1.5 (vars.$space-base * 3);
+    white-space: nowrap;
+  }
+
+  .button:hover {
+    border-color: vars.$grey-medium;
+    color: vars.$grey-dark;
+  }
+
+  .button:focus {
+    border-color: vars.$blue;
+    color: vars.$grey-dark;
+  }
+
+  .button:active {
+    border-color: vars.$grey-medium-dark;
+    color: vars.$grey-dark;
+  }
+  
+  &.buttons.group .button:not(:first-child) {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  &.buttons.group .button:not(:last-child) {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-right: -1px;
+  }
+  
+  &.buttons.group .button:last-child {
+    margin-right: 0;
+  }
+  
+  &.buttons.group .button:hover {
+    z-index: 2;
+  }
+  
+  &.buttons.group .button:focus, 
+  &.buttons.group .button:active {
+    z-index: 3;
+  }
+  
+  &.buttons.group .button:focus:hover, 
+  &.buttons.group .button:active:hover {
+    z-index: 4;
+  }
+}

@@ -2,15 +2,22 @@ import React from 'react';
 
 import './gradient.scss';
 
-const Gradient = () => (
-  <>
-    <div id="colors">
-      <span className="colors__first">First color</span>
-      <span className="colors__arrow">-&gt;</span>
-      <span className="colors__last">Last color</span>
-    </div>
-    <div id="gradient">Gradient</div>
-  </>
-);
+const Gradient = () => {
+  const direction = '90deg';
+  const firstColor = 'blue';
+  const lastColor = '#f0f';
+  const gradient = `linear-gradient(${direction},${firstColor},${lastColor})`;
+
+  return (
+    <>
+      <div id="colors">
+        <span className="colors__first" style={{ color: firstColor }}>{ firstColor }</span>
+        <span className="colors__arrow" style={{ transform: `rotate(calc(${direction} - 90deg))` }}>→</span>
+        <span className="colors__last" style={{ color: lastColor }}>{ lastColor }</span>
+      </div>
+      <div id="gradient" style={{ background: gradient }} />
+    </>
+  );
+};
 
 export default Gradient;
