@@ -1,9 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './nbColors.scss';
 
-const NbColors = () => (
-  <div className="nbColors">12 couleur(s) générée(s)</div>
+const NbColors = ({ nbColors }) => (
+  <div className="nbColors">{nbColors} couleur(s) générée(s)</div>
 );
+
+NbColors.propTypes = {
+  nbColors: PropTypes.number.isRequired,
+};
 
 export default NbColors;

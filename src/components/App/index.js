@@ -1,6 +1,7 @@
 // == Import npm
 import React from 'react';
-import NbColors from 'src/components/NbColors';
+// import NbColors from 'src/components/NbColors';
+import NbColorsContainer from 'src/containers/NbColors';
 import RandomButtons from 'src/components/RandomButtons';
 import Gradient from 'src/components/Gradient';
 import Directions from 'src/components/Directions';
@@ -11,7 +12,7 @@ import './styles.scss';
 // == Composant
 const App = () => (
   <div className="app">
-    <NbColors />
+    <NbColorsContainer />
     <RandomButtons />
     <Gradient />
     <Directions />
