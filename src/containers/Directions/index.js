@@ -5,9 +5,6 @@ import { changeDirection } from 'src/actions';
 // presentation component import
 import Directions from 'src/components/Directions';
 
-const mapStateToProps = (state) => ({
-});
-
 const mapDispatchToProps = (dispatch) => ({
   changeDirection: (value) => {
     const action = changeDirection(value);
@@ -16,4 +13,4 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 // === assistant creation
-export default connect(mapStateToProps, mapDispatchToProps)(Directions);
+export default connect(null, mapDispatchToProps)(Directions);
