@@ -2,9 +2,9 @@
 import React from 'react';
 // import NbColors from 'src/components/NbColors';
 import NbColorsContainer from 'src/containers/NbColors';
-import RandomButtons from 'src/components/RandomButtons';
-import Gradient from 'src/components/Gradient';
-import Directions from 'src/components/Directions';
+import RandomButtons from 'src/containers/RandomButtons';
+import Gradient from 'src/containers/Gradient';
+import Directions from 'src/containers/Directions';
 
 // == Import
 import './styles.scss';

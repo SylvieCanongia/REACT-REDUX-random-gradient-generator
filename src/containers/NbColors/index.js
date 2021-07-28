@@ -4,9 +4,9 @@ import { connect } from 'react-redux';
 import NbColors from 'src/components/NbColors';
 
 // Read informations into the state
+// eslint-disable-next-line arrow-body-style
 const mapStateToProps = (state) => {
   return {
-    // name of the props to fill: element to get ito the state
     nbColors: state.nbColors,
   };
 };

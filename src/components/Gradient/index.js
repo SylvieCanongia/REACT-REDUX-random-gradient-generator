@@ -1,11 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './gradient.scss';
 
-const Gradient = () => {
-  const direction = '90deg';
-  const firstColor = 'orange';
-  const lastColor = '#f0f';
+const Gradient = ({ direction, firstColor, lastColor }) => {
   const gradient = `linear-gradient(${direction},${firstColor},${lastColor})`;
 
   return (
@@ -20,4 +18,9 @@ const Gradient = () => {
   );
 };
 
+Gradient.propTypes = {
+  direction: PropTypes.string.isRequired,
+  firstColor: PropTypes.string.isRequired,
+  lastColor: PropTypes.string.isRequired,
+};
 export default Gradient;
